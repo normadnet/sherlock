@@ -391,7 +391,7 @@ def sherlock(username, site_data, query_notify,
             if isinstance(errors, str):
                 # Checks if the error message is in the HTML
                 # if error is present we will set flag to False
-                if errors in r.text:
+                if errors in r.text or r.status_code == 403 or r.url != url:
                     error_flag = False
             else:
                 # If it's list, it will iterate all the error message
