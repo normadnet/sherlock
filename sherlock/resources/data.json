@@ -1946,9 +1946,11 @@
     "username_claimed": "user"
   },
   "TikTok": {
-    "errorType": "status_code",
+    "errorType": "message",
+    "errorMsg": "Something went wrong",
     "url": "https://tiktok.com/@{}",
     "urlMain": "https://tiktok.com/",
+    "request_method": "GET",
     "username_claimed": "red"
   },
   "TnAFlix": {
