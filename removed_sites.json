@@ -837,5 +837,34 @@
     "url": "https://forums.gunsandammo.com/profile/{}",
     "urlMain": "https://gunsandammo.com/",
     "username_claimed": "adam"
+  },
+  "G2G": {
+    "errorType": "response_url",
+    "errorUrl": "https://www.g2g.com/{}",
+    "regexCheck": "^[A-Za-z][A-Za-z0-9_]{2,11}$",
+    "url": "https://www.g2g.com/{}",
+    "urlMain": "https://www.g2g.com/",
+    "username_claimed": "user"
+  },
+  "Virgool": {
+    "errorMsg": "\u06f4\u06f0\u06f4",
+    "errorType": "message",
+    "url": "https://virgool.io/@{}",
+    "urlMain": "https://virgool.io/",
+    "username_claimed": "blue"
+  },
+  "ebio.gg": {
+    "errorType": "message",
+    "errorMsg": "hasn't been claimed yet!",
+    "request_method": "GET",
+    "url": "https://ebio.gg/{}",
+    "urlMain": "https:/ebio.gg",
+    "username_claimed": "dev"
+  },
+  "Whonix Forum": {
+    "errorType": "status_code",
+    "url": "https://forums.whonix.org/u/{}/summary",
+    "urlMain": "https://forums.whonix.org/",
+    "username_claimed": "red"
   }
 }

@@ -779,14 +779,6 @@
     "urlMain": "https://freesound.org/",
     "username_claimed": "blue"
   },
-  "G2G": {
-    "errorType": "response_url",
-    "errorUrl": "https://www.g2g.com/{}",
-    "regexCheck": "^[A-Za-z][A-Za-z0-9_]{2,11}$",
-    "url": "https://www.g2g.com/{}",
-    "urlMain": "https://www.g2g.com/",
-    "username_claimed": "user"
-  },
   "GNOME VCS": {
     "errorType": "response_url",
     "errorUrl": "https://gitlab.gnome.org/{}",
@@ -2099,13 +2091,6 @@
     "urlMain": "https://vimeo.com/",
     "username_claimed": "blue"
   },
-  "Virgool": {
-    "errorMsg": "\u06f4\u06f0\u06f4",
-    "errorType": "message",
-    "url": "https://virgool.io/@{}",
-    "urlMain": "https://virgool.io/",
-    "username_claimed": "blue"
-  },
   "VirusTotal": {
     "errorType": "status_code",
     "request_method": "GET",
@@ -2153,12 +2138,6 @@
     "url": "https://{}.weebly.com/",
     "urlMain": "https://weebly.com/",
     "username_claimed": "blue"
-  },
-  "Whonix Forum": {
-    "errorType": "status_code",
-    "url": "https://forums.whonix.org/u/{}/summary",
-    "urlMain": "https://forums.whonix.org/",
-    "username_claimed": "red"
   },
   "Wikidot": {
     "errorMsg": "User does not exist.",
@@ -2345,12 +2324,6 @@
     "url": "https://egpu.io/forums/profile/{}/",
     "urlMain": "https://egpu.io/",
     "username_claimed": "blue"
-  },
-  "ebio.gg": {
-    "errorType": "status_code",
-    "url": "https://ebio.gg/{}",
-    "urlMain": "https:/ebio.gg",
-    "username_claimed": "dev"
   },
   "eintracht": {
     "errorType": "status_code",
