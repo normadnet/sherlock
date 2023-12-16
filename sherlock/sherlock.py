@@ -15,8 +15,6 @@ import platform
 import re
 import sys
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
-from random_user_agent.user_agent import UserAgent
-from random_user_agent.params import SoftwareName, OperatingSystem, Popularity
 from time import monotonic
 
 import requests
@@ -232,13 +230,8 @@ def sherlock(username, site_data, query_notify,
 
         # A user agent is needed because some sites don't return the correct
         # information since they think that we are bots (Which we actually are...)
-        software_names = [SoftwareName.CHROME.value]
-        operating_systems = [OperatingSystem.WINDOWS.value, OperatingSystem.MAC.value]
-        useragentgenerator = UserAgent(software_names=software_names,
-                                       operating_systems=operating_systems,
-                                       popularity=[Popularity.POPULAR.value])
         headers = {
-            "User-Agent": f"{useragentgenerator.get_random_user_agent()}",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0",
         }
 
         if "headers" in net_info:
