@@ -2667,7 +2667,8 @@
     "username_claimed": "janusz-nowak"
   },
   "xHamster": {
-    "errorType": "status_code",
+    "errorMsg": ["Unfortunately, your browser does not support the latest technology used on xHamster.", "User not found"],
+    "errorType": "message",
     "isNSFW": true,
     "url": "https://xhamster.com/users/{}",
     "urlMain": "https://xhamster.com",
