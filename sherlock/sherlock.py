@@ -391,7 +391,7 @@ def sherlock(username, site_data, query_notify,
             if isinstance(errors, str):
                 # Checks if the error message is in the HTML
                 # if error is present we will set flag to False
-                if errors in r.text:
+                if errors in r.text or r.status_code == 403 or r.url != url:
                     error_flag = False
             else:
                 # If it's list, it will iterate all the error message
@@ -410,6 +410,9 @@ def sherlock(username, site_data, query_notify,
             # Checks if the status code of the response is 2XX
             elif not r.status_code >= 300 or r.status_code < 200:
                 query_status = QueryStatus.CLAIMED
+                # This case for when retrieving a success status code but with error page
+                if r.url != url:
+                    query_status = QueryStatus.AVAILABLE
             else:
                 query_status = QueryStatus.AVAILABLE
         elif error_type == "response_url":
